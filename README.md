@@ -1,7 +1,7 @@
 # Overview
 During an assessment of the application’s account management functionality, I identified a high‑severity multistep Clickjacking vulnerability that allowed critical user actions to be performed without informed consent. The application relied on client‑side protections such as CSRF tokens and JavaScript confirmation dialogs, but failed to prevent user interface redressing. By embedding the target page inside a transparent iframe and carefully aligning decoy elements, a victim could be tricked into unknowingly completing both the account deletion action and its confirmation.
 
-# Steps Undertaken
+# Methodology
 
 Step 1: Reviewed the account deletion workflow to understand required user interactions and protections.
 
